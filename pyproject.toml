@@ -1,0 +1,14 @@
+[project]
+name = "projeto-fastapi-satc"
+version = "0.1.0"
+description = "CRUD simples com FastAPI (in-memory)"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "fastapi>=0.115.12",
+    "mkdocs>=1.6.1",
+    "mkdocs-material>=9.6.12",
+    "mkdocstrings>=0.29.1",
+    "pydantic>=2.11.3",
+    "uvicorn>=0.34.2",
+]

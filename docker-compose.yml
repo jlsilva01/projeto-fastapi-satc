@@ -1,0 +1,7 @@
+services:
+  web:
+    image: jlsilva01/projeto-fastapi-satc:latest
+    container_name: projeto-fastapi-satc
+    ports:
+      - "8000:8000"
+    restart: unless-stopped

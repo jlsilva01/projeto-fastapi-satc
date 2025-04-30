@@ -1,9 +1,9 @@
 # CRUD FastAPI In-Memory
 
-[![Lint & Tests](https://img.shields.io/github/actions/workflow/status/astral/fastapi-crud-inmemory/ci.yml?branch=main)](https://github.com/astral/fastapi-crud-inmemory/actions)  
-[![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen.svg)](https://github.com/astral/fastapi-crud-inmemory)  
-[![Docker Pulls](https://img.shields.io/docker/pulls/astral/fastapi-crud-inmemory)](https://hub.docker.com/r/astral/fastapi-crud-inmemory)  
-[![Docs](https://img.shields.io/badge/docs-mkdocs-blue)](https://astral.github.io/fastapi-crud-inmemory/)  
+[![Lint & Tests](https://img.shields.io/github/actions/workflow/status/astral/fastapi-crud-inmemory/ci.yml?branch=main)](https://github.com/jlsilva01/projeto-fastapi-satc/actions)  
+[![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen.svg)](https://github.com/jlsilva01/projeto-fastapi-satc)  
+[![Docker Pulls](https://img.shields.io/docker/pulls/astral/fastapi-crud-inmemory)](https://hub.docker.com/r/jlsilva01/fastapi-crud-inmemory)  
+[![Docs](https://img.shields.io/badge/docs-mkdocs-blue)](https://jlsilva01.github.io/github.com/projeto-fastapi-satc/)  
 
 Este projeto é um exemplo de API CRUD simples, construída com **FastAPI**, onde todos os dados são mantidos **em memória** (sem banco de dados).
 

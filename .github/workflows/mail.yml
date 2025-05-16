@@ -42,6 +42,6 @@ jobs:
           tags: |
             jlsilva01/projeto-fastapi-satc:v${{ github.run_number }}
             jlsilva01/projeto-fastapi-satc:latest
-          context: ./app
+          context: ./
           file: ./Dockerfile
           push: true

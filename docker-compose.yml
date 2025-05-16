@@ -1,6 +1,8 @@
 services:
   web:
-    image: jlsilva01/projeto-fastapi-satc:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
     container_name: projeto-fastapi-satc
     ports:
       - "8000:8000"

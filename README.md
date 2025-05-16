@@ -107,6 +107,7 @@ uv run mkdocs gh-deploy
 ## 🤝 Contribuindo
 
 1. Abra uma **issue** para discutir sua feature ou bug.  
+2. Faça um Fork do repo.
 2. Crie um **branch**:  
 
    ```bash

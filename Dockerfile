@@ -10,18 +10,24 @@ RUN apk add --no-cache build-base libffi-dev openssl-dev
 # Atualiza pip
 RUN pip install --upgrade pip
 
-# Copia apenas o pyproject.toml para instalar dependências
-COPY pyproject.toml .
+# 3. copia só os arquivos de definição de dependências para 
+#    acelerar o cache de camada do Docker
+COPY pyproject.toml poetry.lock* ./
 
-# Instala dependências de CLI e do projeto
-RUN pip install uv mkdocs mkdocstrings && \
-    pip install .
+# 4. instala o CLI do uv e cria o virtualenv local
+RUN pip install --no-cache-dir uv \
+ && uv venv \
+ && source .venv/bin/activate \
+ && uv sync
+
+# 6. adiciona o binário do venv ao PATH
+ENV PATH="/app/.venv/bin:${PATH}"
 
 # Copia todo o código da aplicação
 COPY . .
 
 # Expõe a porta usada pelo FastAPI/Uvicorn
-EXPOSE 8001
+EXPOSE 8000
 
 # Comando padrão para iniciar o servidor FastAPI via uv
-CMD ["uv", "run", "uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8001"]
+CMD ["uv", "run", "uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]

@@ -12,7 +12,7 @@ RUN pip install --upgrade pip
 
 # 3. copia só os arquivos de definição de dependências para 
 #    acelerar o cache de camada do Docker
-COPY /pyproject.toml /poetry.lock* ./
+COPY ./../pyproject.toml ./../poetry.lock* ./
 
 # 4. instala o CLI do uv e cria o virtualenv local
 RUN pip install --no-cache-dir uv \

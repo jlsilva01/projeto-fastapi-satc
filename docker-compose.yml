@@ -1,9 +1,17 @@
+# services:
+#   web:
+#     build:
+#       context: .
+#       dockerfile: Dockerfile
+#     container_name: projeto-fastapi-satc
+#     ports:
+#       - "8000:8000"
+#     restart: unless-stopped
+
 services:
-  web:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    container_name: projeto-fastapi-satc
+  fastapi:
+    image: jlsilva01/projeto-fastapi-satc:latest
+    container_name: fastapi
     ports:
-      - "8000:8000"
+      - "172.27.62.119:8000:8000"
     restart: unless-stopped

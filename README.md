@@ -1,6 +1,6 @@
 # CRUD FastAPI In-Memory
 
-[![Lint & Tests](https://img.shields.io/github/actions/workflow/status/jlsilva01/projeto-fastapi-satc/main.yml?branch=main)](https://github.com/jlsilva01/projeto-fastapi-satc/actions)    
+![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/jlsilva01/projeto-fastapi-satc/mail.yml)  
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen.svg)](https://github.com/jlsilva01/projeto-fastapi-satc)  
 [![Docker Pulls](https://img.shields.io/docker/pulls/jlsilva01/projeto-fastapi-satc)](https://hub.docker.com/r/jlsilva01/projeto-fastapi-satc)  
 [![Docs](https://img.shields.io/badge/docs-mkdocs-blue)](https://jlsilva01.github.io/projeto-fastapi-satc/)  
